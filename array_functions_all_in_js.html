@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+
+       /// All array functions
+
+
+       // Array concat()
+       // combines two or more arrays and returns a new array
+
+       let arr1 = ['A','B','C'];
+       let arr2 = ['D','E','F'];
+
+       let arr3 = arr1.concat(arr2);
+
+       document.writeln(arr3+'<br>');  // A,B,C,D,E,F
+
+
+
+       // array from()
+       // creates a new array that holds the shallow copy from an array or iterable object 
+
+       // when applied to a string, each word gets converted to an array element in the new array
+
+       var name = "Faisal Ahmmed";
+
+       var letters = Array.from(name);
+
+       document.write(letters+'<br>');  // print all the letters as array elements
+
+
+       // array filter()
+       // this method filter and extract the elements of an array that satisfying the provided condition
+
+       var marks = [50,30,45,37,20,55];
+
+       function check(value)
+       {
+         return value>30;
+       }
+
+       document.writeln(marks.filter(check)+'<br>');  // Filtered all the values that are greater than 30
+
+
+
+       //  array find()
+       // this method returns the first element of the given array that satisfies the provided function condition
+
+       var arr=[10,20,30,40,60];
+
+       function checkValue(value)
+       {
+        return value>25;    
+       }
+
+       var result = arr.find(checkValue); // Return the first value that is greater than 25 in the array
+
+       // Display undefined if find() function does not get any value in the array that satisfies the condition
+       document.write(result+'<br>');
+
+
+       // array findIndex()
+       // This method returns the index of the first element of the given array that satisfies the provided function condition 
+       // It return -1, if no element satisfies the condition
+
+       var arr = [10,11,23,43,52,23];
+
+       function findValue(value)
+       {
+        return value>100;
+       }
+
+       var result = arr.findIndex(findValue);
+
+       document.write(result+'<br>');  // print -1 because there is no value greater than 100
+
+
+       // array forEach()
+       // This method is used to invoke the specified function once for each array element
+
+       var values=[10,20,30,40,50,60];
+
+       values.forEach( function(val){
+
+           document.writeln(val+'<br>');   // display each value of the array
+       
+        });
+
+
+
+
+        // array includes()
+        // This method checks whether the given array contains the specified element
+        // It returns true if an array contains the element, otherwise false
+
+        var arr = [5,10,15,20,25];
+
+        var result = arr.includes(22);
+
+        document.write(result+'<br>');  // display false because 22 is not there in the array
+
+
+
+        // array indexOf()
+        // This method is used to search the position of a particular element in a given array
+        // If it doest not find that particular element returns -1
+
+        var arr = [5,10,20,10,15,20];
+
+        var result = arr.indexOf(20); // display 2 because at index 2 value 20 first occured
+        document.write(result+'<br>');
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+
+
+
+
+
+        
+
+    </script>
+</body>
+
+</html>
