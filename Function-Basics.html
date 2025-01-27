@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+
+        // Javascript function 
+        // Function declare  and call
+
+        function msg(){                            // function Declaration
+            document.write("I am a function<br>");
+        }
+
+        // Function call
+
+        msg();      
+        
+        
+        /// Functions can be called by passing arguments
+
+        function display(name){                        // function_name(argument){}
+            document.write(name+" this name is passed by argument"+"<br>");
+        }
+        
+        display("Faisal Ahmmed");
+
+
+
+        /// Functions can be called that returns a value 
+
+        function addition(num1,num2)
+        {
+            return num1+num2;    /// this function return a addition value
+        }
+
+        let ans = addition(10,20);   // addition(10,20); returns the value (10+20) = 30
+
+        document.write("The returned value is "+ans+"<br");
+
+
+        
+
+    </script>
+</body>
+
+</html>
