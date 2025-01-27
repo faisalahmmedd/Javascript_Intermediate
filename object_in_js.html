@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+
+        // JavaScript object is an entity having state and behaviour like properties and method
+
+        // javaScript object create and display
+
+        // javascript object create
+        const Person={
+              Name : "Faisal Ahmmed",
+              Age : 26,
+              city : "Dinajpur",
+              Country : "Bangladesh"
+        };
+
+        // Display object elements
+        document.write(Person.Name+'<br>');    // using '.' operator
+        document.write(Person["Age"]+'<br>');  // using "" double quotation 
+        document.write(Person.city+'<br>');
+        document.write(Person["Country"]+'<br>');
+
+        // Display object element using for each loop
+        for(var value in Person)
+        {
+            document.write(Person[value]+'<br>');
+        }
+        
+      
+
+
+
+
+
+        
+
+    </script>
+</body>
+
+</html>
