@@ -5,3 +5,7 @@
 <p>** The JavaScript prototype property allows you to add new properties and methods to object constructors</p>
 <p>** The Object.assign() method copies properties from one or more source objects to a target object</p>
 <p>** Object.entries() returns an array of the key/value pairs in an object</p>
+<br><br>
+<h2>Javascript Function </h2>
+<p>** JavaScript functions are defined with the function keyword</p>
+<p>** A JavaScript function can also be defined using an expression</p>
